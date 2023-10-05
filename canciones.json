@@ -1,0 +1,104 @@
+{
+    "playlists": [
+        {
+            "nombre": "Playlist 1",
+            "id": "0",
+            "reproducciones": 0,
+            "canciones": [
+                {
+                    "id": "0",
+                    "titulo": "Azul",
+                    "url": "canciones\/C1.mp3",
+                    "artista": "Artista 0",
+                    "cover": "fotos\/azul.jpg"
+                },
+                {
+                    "id": "1",
+                    "titulo": "Gris",
+                    "url": "canciones\/C2.mp3",
+                    "artista": "Artista 1",
+                    "cover": "fotos\/gris.jpeg"
+                },
+                {
+                    "id": "2",
+                    "titulo": "Rosa",
+                    "url": "canciones\/C3.mp3",
+                    "artista": "Artista 2",
+                    "cover": "fotos\/rosa.avif"
+                }
+            ]
+        },
+        {
+            "nombre": "Playlist 2",
+            "id": "1",
+            "reproducciones": 0,
+            "canciones": [
+                {
+                    "id": "3",
+                    "titulo": "Rojo",
+                    "url": "canciones\/C4.mp3",
+                    "artista": "Artista 3",
+                    "cover": "fotos\/rojo.jpeg"
+                },
+                {
+                    "id": "4",
+                    "titulo": "Verde",
+                    "url": "canciones\/C5.mp3",
+                    "artista": "Artista 4",
+                    "cover": "fotos\/verde.jpg"
+                },
+                {
+                    "id": "5",
+                    "titulo": "Amarillo",
+                    "url": "canciones\/C6.mp3",
+                    "artista": "Artista 5",
+                    "cover": "fotos\/amarillo.jpeg"
+                }
+            ]
+        }
+    ],
+    "songs": [
+        {
+            "id": "0",
+            "titulo": "Azul",
+            "url": "canciones\/C1.mp3",
+            "artista": "Artista 0",
+            "cover": "fotos\/azul.jpg"
+        },
+        {
+            "id": "1",
+            "titulo": "Gris",
+            "url": "canciones\/C2.mp3",
+            "artista": "Artista 1",
+            "cover": "fotos\/gris.jpeg"
+        },
+        {
+            "id": "2",
+            "titulo": "Rosa",
+            "url": "canciones\/C3.mp3",
+            "artista": "Artista 2",
+            "cover": "fotos\/rosa.avif"
+        },
+        {
+            "id": "3",
+            "titulo": "Rojo",
+            "url": "canciones\/C4.mp3",
+            "artista": "Artista 3",
+            "cover": "fotos\/rojo.jpeg"
+        },
+        {
+            "id": "4",
+            "titulo": "Verde",
+            "url": "canciones\/C5.mp3",
+            "artista": "Artista 4",
+            "cover": "fotos\/verde.jpg"
+        },
+        {
+            "id": "5",
+            "titulo": "Amarillo",
+            "url": "canciones\/C6.mp3",
+            "artista": "Artista 5",
+            "cover": "fotos\/amarillo.jpeg"
+        }
+    ]
+}

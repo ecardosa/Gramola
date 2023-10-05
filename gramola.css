@@ -1,0 +1,442 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+
+.arriba{
+    background-image: linear-gradient(to bottom, #f4f3ee, transparent);
+}
+.arriba .fotoperfil{
+    width: 150px;
+    margin-right: auto;
+    margin: 0;
+    padding-left:25px;
+    padding-top: 25px;
+}
+header.arriba{
+    display: flex;
+    align-items: center;
+
+}
+
+.usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+h3{
+    margin: 0;
+    padding: 20px;
+    padding-top: 50px;
+}
+button[disabled] {
+    opacity: 0.5; /* Reduce la opacidad de los botones desactivados */
+    pointer-events: none; /* Desactiva la interacción con los botones desactivados */
+}
+
+  button[type="play"] {
+    border: none; 
+    background-color: transparent; 
+    padding: 0; 
+    cursor: pointer;
+    width: 15px;
+
+  }
+.arriba { grid-area: header;
+padding: 10px; }
+.abajo_izq { grid-area: main;
+border-right: rgb(163, 156, 156) solid 2px;
+overflow-y: auto; 
+padding-left: 15px;}
+
+
+.peu  {grid-area: peu;
+
+    width: 100%;
+}
+.pie{
+display: flex;  
+justify-content: space-between;
+align-items: center;
+height: 100px;
+
+}
+.foto{grid-area: foto;}
+.barra{grid-area: barra;
+width: 50%;
+text-align: center;
+}
+.controls{grid-area: controls;}
+.plantilla {
+  display: grid;
+  grid-template-areas:
+    'header header  header    '
+    'main  main main'
+    'main  main main'
+    'main  main main'
+    'peu peu  peu';
+  gap: 10px;
+  height: 100%;
+  background:#e4e6ec;
+  margin: 0;
+
+}
+
+.plantilla > div {
+  background-color: #bcb8b1;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+
+}
+  
+div.arriba {
+   
+    opacity: 70%;
+    background: linear-gradient(to bottom,  rgb(217, 217, 217), rgba(255, 255, 255, 0))
+    
+}
+h4{
+    font-size: 30px;
+    padding-bottom: 0;
+    padding-left: 30px;
+}
+ul{
+    list-style: none;
+}
+
+
+.abajo_izq.canciones.li.button[type="play"] {
+    margin-left: 10px;
+}
+
+
+.song {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #e2d7d7;
+    color: #fff;
+}
+.canciones{
+    padding-left: 10px;
+}
+.c2{
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: #6246ea;
+    border-radius: 5px;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.c1{
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: #6246ea;
+    border-radius: 5px;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.c1:hover{
+    background-color: #d1d1e9;
+    height: 9vh;
+    cursor: pointer;
+}
+h6{
+    padding-right: 20px;
+    margin-top: auto;
+    padding-bottom: 5px;
+}
+button[type="play"]{
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.p1{
+   
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+div >h5{
+    text-align: center;
+}
+
+button[type="fotoP"]{
+    border: none; 
+    background-color: transparent; 
+    padding: 0; 
+    cursor: pointer;
+}
+
+
+.pmas{
+    display: flex;
+    height: 8vh;
+    background-color: #6246ea;
+    border-radius: 5px;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;  
+}
+img{
+
+width: 100%;
+top: 0;
+left: 0;
+overflow: hidden;}
+
+.peu{
+    background-color: #d1d1e9;
+    justify-content: space-between;
+}
+
+#barraProgreso{
+    width: 80%;
+}
+.container{
+    height: calc(100vh - var(--borde-pagina) * 2);
+    padding: var(--borde-pagina);
+    padding: 0;
+  }
+  :root {
+    --borde-pagina: 0px;
+}
+.nomcancion{
+    margin-left: 7%;
+}
+.controls{
+  
+    margin-right: 10%;
+}
+.controls img{
+    height: 20px;
+    width: 20px;
+padding: 5px;
+}
+
+.controls button{
+    border: none; 
+    background-color: transparent; 
+  
+    cursor: pointer;
+ 
+
+}
+
+.login-box.hidden {
+    display: none;
+  }
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #d9d4e7;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #33272a;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid#33272a;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #33272a;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color:#33272a;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #0e172c;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  p {
+    font-size: small;}
+  .login-box a:hover {
+    background: #a786df;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #a786df,
+                0 0 25px #a786df,
+                0 0 50px #a786df,
+                0 0 100px #a786df;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #a786df);
+    animation: btn-anim1 2s linear infinite;
+  }
+
+.playlists{
+   display: block;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+#timepoActual{
+  margin-right: auto;
+
+
+}
+.barraVolumen{
+  display: none;
+}
+
+#timepoTotal{
+  margin-left:auto ;
+
+  
+ 
+}
+
+.can_añadir{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 5vh;
+  background-color: #b7aee1;
+  border-radius: 5px;
+
+}
+
+.can_añadir:hover{
+  background-color: #d1d1e9;
+  cursor: pointer;
+}
+
+.can_añadir input{
+  margin-left: 10px;
+}
+
+.afegir {
+  border: none;
+  background-color:#b7aee1 ;
+  cursor: pointer;
+ padding: 12
+ px;
+ margin-left: 80%;
+ border-radius: 5px;
+ 
+ margin-top: 10px;
+ align-items: end;
+}
+.tiempo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+button[type="playl"] {
+    align-items: center;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding: 1rem;
+  }
+  
+  button[type="playl"] p{
+    font-size: large;
+  }
+  button[type="playl"]:before {
+    background-color: #000000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25,.8,.25,1);
+    width: 0;
+  }
+  
+  button[type="playl"]:hover:before {
+    background-color: #000000;
+    width: 3rem;
+  }
