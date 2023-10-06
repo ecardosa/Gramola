@@ -1,37 +1,39 @@
 body{
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Mukta', sans-serif;
-    font-family: 'PT Sans Caption', sans-serif;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mukta', sans-serif;
+  font-family: 'PT Sans Caption', sans-serif;
 }
-
 
 .arriba{
-    background-image: linear-gradient(to bottom, #f4f3ee, transparent);
+  background-image: linear-gradient(to bottom, #f4f3ee, transparent);
 }
-.arriba .fotoperfil{
-    width: 150px;
-    margin-right: auto;
-    margin: 0;
-    padding-left:25px;
-    padding-top: 25px;
-}
-header.arriba{
-    display: flex;
-    align-items: center;
 
+.arriba .fotoperfil{
+  width: 150px;
+  margin-right: auto;
+  margin: 0;
+  padding-left:25px;
+  padding-top: 25px;
+}
+
+header.arriba{
+  display: flex;
+  align-items: center;
 }
 
 .usuario{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
 h3{
-    margin: 0;
-    padding: 20px;
-    padding-top: 50px;
+  margin: 0;
+  padding: 20px;
+  padding-top: 50px;
 }
+
 button[disabled] {
     opacity: 0.5; /* Reduce la opacidad de los botones desactivados */
     pointer-events: none; /* Desactiva la interacción con los botones desactivados */
@@ -43,33 +45,36 @@ button[disabled] {
     padding: 0; 
     cursor: pointer;
     width: 15px;
-
   }
+
 .arriba { grid-area: header;
 padding: 10px; }
+
 .abajo_izq { grid-area: main;
 border-right: rgb(163, 156, 156) solid 2px;
 overflow-y: auto; 
 padding-left: 15px;}
 
-
 .peu  {grid-area: peu;
-
-    width: 100%;
+width: 100%;
 }
+
 .pie{
 display: flex;  
 justify-content: space-between;
 align-items: center;
 height: 100px;
-
 }
+
 .foto{grid-area: foto;}
+
 .barra{grid-area: barra;
 width: 50%;
 text-align: center;
 }
+
 .controls{grid-area: controls;}
+
 .plantilla {
   display: grid;
   grid-template-areas:
@@ -82,7 +87,6 @@ text-align: center;
   height: 100%;
   background:#e4e6ec;
   margin: 0;
-
 }
 
 .plantilla > div {
@@ -90,29 +94,26 @@ text-align: center;
   text-align: left;
   padding: 20px 0;
   font-size: 30px;
-
 }
   
 div.arriba {
-   
     opacity: 70%;
-    background: linear-gradient(to bottom,  rgb(217, 217, 217), rgba(255, 255, 255, 0))
-    
+    background: linear-gradient(to bottom,  rgb(217, 217, 217), rgba(255, 255, 255, 0))  
 }
+
 h4{
     font-size: 30px;
     padding-bottom: 0;
     padding-left: 30px;
 }
+
 ul{
     list-style: none;
 }
 
-
 .abajo_izq.canciones.li.button[type="play"] {
     margin-left: 10px;
 }
-
 
 .song {
     display: flex;
@@ -121,9 +122,11 @@ ul{
     background-color: #e2d7d7;
     color: #fff;
 }
+
 .canciones{
     padding-left: 10px;
 }
+
 .c2{
     display: flex;
     justify-content: space-between;
@@ -135,6 +138,7 @@ ul{
     margin-bottom: 10px;
     margin-right: 20px;
 }
+
 .c1{
     display: flex;
     justify-content: space-between;
@@ -153,21 +157,23 @@ ul{
     height: 9vh;
     cursor: pointer;
 }
+
 h6{
     padding-right: 20px;
     margin-top: auto;
     padding-bottom: 5px;
 }
+
 button[type="play"]{
     margin-right: auto;
     margin-left: 10px;
 }
 
-.p1{
-   
+.p1{  
     padding-left: 40px;
     margin-bottom: 10px;
 }
+
 div >h5{
     text-align: center;
 }
@@ -179,7 +185,6 @@ button[type="fotoP"]{
     cursor: pointer;
 }
 
-
 .pmas{
     display: flex;
     height: 8vh;
@@ -190,12 +195,13 @@ button[type="fotoP"]{
     margin-bottom: 10px;
     margin-right: 20px;  
 }
-img{
 
+img{
 width: 100%;
 top: 0;
 left: 0;
-overflow: hidden;}
+overflow: hidden;
+}
 
 .peu{
     background-color: #d1d1e9;
@@ -205,6 +211,7 @@ overflow: hidden;}
 #barraProgreso{
     width: 80%;
 }
+
 .container{
     height: calc(100vh - var(--borde-pagina) * 2);
     padding: var(--borde-pagina);
@@ -213,31 +220,31 @@ overflow: hidden;}
   :root {
     --borde-pagina: 0px;
 }
+
 .nomcancion{
     margin-left: 7%;
 }
+
 .controls{
-  
     margin-right: 10%;
 }
+
 .controls img{
     height: 20px;
     width: 20px;
-padding: 5px;
+    padding: 5px;
 }
 
 .controls button{
     border: none; 
     background-color: transparent; 
-  
     cursor: pointer;
- 
-
 }
 
 .login-box.hidden {
     display: none;
-  }
+}
+
 .login-box {
     position: absolute;
     top: 50%;
@@ -249,7 +256,7 @@ padding: 5px;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
-  }
+}
   
   .login-box .user-box {
     position: relative;
@@ -299,8 +306,10 @@ padding: 5px;
     margin-top: 40px;
     letter-spacing: 4px
   }
+
   p {
     font-size: small;}
+    
   .login-box a:hover {
     background: #a786df;
     color: #fff;
@@ -380,20 +389,21 @@ padding: 5px;
 
 .can_añadir input{
   margin-left: 10px;
+  background-color: #b7aee1;
 }
+
 
 .afegir {
   border: none;
   background-color:#b7aee1 ;
   cursor: pointer;
- padding: 12
- px;
+ padding: 12px;
  margin-left: 80%;
  border-radius: 5px;
- 
  margin-top: 10px;
  align-items: end;
 }
+
 .tiempo{
   display: flex;
   justify-content: space-between;
@@ -439,4 +449,24 @@ button[type="playl"] {
   button[type="playl"]:hover:before {
     background-color: #000000;
     width: 3rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Otros estilos específicos para dispositivos móviles */
+  .pie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+  }
+
+    /* Estilos para los iconos en el pie de página (controls) en dispositivos móviles */
+    .controls {
+      font-size: 14px; /* Tamaño de fuente más pequeño para los iconos */
+    }
+  
+    .controls img {
+      height: 14px; /* Altura más pequeña para las imágenes de los iconos */
+      width: 14px; /* Ancho más pequeño para las imágenes de los iconos */
+    }
   }
